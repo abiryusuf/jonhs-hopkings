@@ -12,7 +12,8 @@
     margin: 50px;
     float: left;
     /* display: inline; */
-    text-align: center
+    text-align: center;
+    box-sizing: border-box
 
 }
 #Box1 {
