@@ -14,17 +14,16 @@ console.log(vow)
 
 function countVowel(word){
     var arr = word.split("")
-    var res = "";
+    var res = 0;
 
     for (let i = 0; i < arr.length; i++) {
-        const element = arr[i];
-        if (element === "a" || "e" || "i" || "o" || "u") {
-            res = element + res
-            count++
+        const element = arr[i].toUpperCase();
+        if (element === "A" || element === "E" || element ==="I" || element ==="0" || element ==="U") {
+            res +=1;
         }
         
     }
     return res
 }
-var y = countVowel("abir");
+var y = countVowel("abir YUSUF");
 console.log(y);
