@@ -48,7 +48,7 @@
 
 //
 var name = "abir yusuf";
-console.log(name.split(""));
+console.log("split........", name.split(""));
 
 function countVowel(value){
     var arr = value.split("");
@@ -64,7 +64,21 @@ function countVowel(value){
     }
     return res;
 }
-console.log(countVowel(name));
+console.log("count vowel.......", countVowel(name));
+
+//reverse 
+function reverseString(str){
+  var arr = str.split("");
+  var res = "";
+  for (let i = 0; i < arr.length; i++) {
+      const element = arr[i];
+      res = element + res
+      
+  }
+  return res
+}
+console.log("reverse String.....",reverseString(name));
+
 
 //Acronym
 
@@ -73,15 +87,18 @@ var cloud = "amazon web services";
 console.log(cloud.split(" "));
 
 function acronym(str){
-    var arr = str.split(" ");
-    var res = "";
+    // var arr = str.split(" ");
+    // var res = "";
 
-    for (let i = 0; i < arr.length; i++) {
-        const element = arr[i];
-        res = element[0].toUpperCase();
+    // for (let i = 0; i < arr.length; i++) {
+    //     const element = arr[i];
+    //     res += element[0].toUpperCase();
         
-    }
+    // }
+    // return res;
+
+    var res = str.split("").reverse().join("");
     return res;
 }
 
-console.log(acronym(cloud));
+console.log("Acronym.......", acronym(cloud));
