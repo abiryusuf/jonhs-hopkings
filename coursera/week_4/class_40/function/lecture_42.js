@@ -16,5 +16,6 @@ if (x === 5) {
 var y = 10;
 
 y += 10;
+//y = y + 10;
 
 console.log(y);
