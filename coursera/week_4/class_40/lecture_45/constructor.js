@@ -7,6 +7,9 @@ function Person(first, last, age, eyecolor){
     this.eyeColor = eyecolor;
     //add new property
     this.language = "English";
+    // this.name = function(){
+    //     return this.firstName + " " + this.lastName;
+    // }
 
 }
 // add new function by prototype 
@@ -15,5 +18,5 @@ Person.prototype.name = function(){
     return this.firstName + " " + this.lastName;
 }
 
-var info = new Person("abir", "yusuf", 32, "Brown");
+var info = new Person("abir", "yusuf", 32, "Brown", "English");
 console.log(info.name(), info);
