@@ -15,12 +15,12 @@ function Person(first, last, age, eyecolor){
 // add new function by prototype 
 //prototype allows to add new properties and methods to object constructors
 Person.prototype.name = function(){
-    return this.firstName + " " + this.lastName;
+    return this.firstName + " " + this.lastName + " " + this.age;
 }
 
 var info = new Person("abir", "yusuf", 32, "Brown", "English");
-//console.log(info.name(), info);
-info.name();
+console.log(info.name(), info);
+//info.name();
 
 var literalCircle = {
     radius: 10,
@@ -45,4 +45,5 @@ function Dog(name) {
   }
   
   var max = new Dog("Max", "Buddy");
+  
   max.bark();

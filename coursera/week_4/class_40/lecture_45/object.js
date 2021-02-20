@@ -19,7 +19,7 @@ console.log("car name", car.model + " " +
      console.log(y);
  }
 
- //Method
+ //Method/function
  var person = {
      firstName: "abir",
      lastName: "yusuf",
