@@ -33,3 +33,14 @@ console.log("car name", car.model + " " +
 
  var x = person.fullName();
  console.log(x)
+
+ var name = {
+
+ };
+
+ name.age = 30;
+
+ name.hello = function(){
+     console.log("Hi " + this.age + name.hello)
+ }
+ name.hello();
