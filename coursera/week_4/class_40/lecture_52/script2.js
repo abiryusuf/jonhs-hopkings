@@ -12,7 +12,8 @@ var abirGreeter = {
 //add new property 
 abirGreeter.name = "Abir";
 
+var greeting = "Hello ";
 //add new function
 abirGreeter.sayHello = function(){
-    console.log("Hello " + abirGreeter.name)
+    console.log(greeting + abirGreeter.name)
 }

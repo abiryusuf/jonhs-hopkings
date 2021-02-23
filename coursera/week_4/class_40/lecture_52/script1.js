@@ -5,12 +5,23 @@
 //     console.log("Hello " + name);
 // }
 
-var yusufGreeter = {
+// var yusufGreeter = {}
 
-}
+// yusufGreeter.name = "Yusuf";
 
-yusufGreeter.name = "Yusuf";
+// var greeting = "Hi "
+// yusufGreeter.sayHi = function(){
+//     console.log(greeting + yusufGreeter.name);
+// }
 
-yusufGreeter.sayHi = function(){
-    console.log("Hi " + yusufGreeter.name);
-}
+(function(window){
+    var yusufGreeter = {};
+
+    yusufGreeter.name = "Yusuf";
+    
+    var greeting = "Hi "
+    yusufGreeter.sayHi = function(){
+        console.log(greeting + yusufGreeter.name);
+    }  
+    window.yusufGreeter = yusufGreeter
+})(window);
