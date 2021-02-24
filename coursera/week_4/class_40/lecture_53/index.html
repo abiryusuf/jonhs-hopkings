@@ -17,6 +17,16 @@
 
     </div>
     <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+          console.log("Yey!");
+        });
+        </script>
+    <script>
+        document.addEventListener("click", myFunction);
+        function myFunction(){
+            var msg = "Hello World";
+            document.getElementById("name").innerHTML = msg;
+        }
         function sayHello(){
             // console.log(document.getElementById("input").value)}
             var name = document.getElementById("input").value;
